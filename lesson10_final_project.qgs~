@@ -1,0 +1,1816 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis saveUser="evanj" saveDateTime="2021-12-13T16:48:29" saveUserFull="Evan Kerr" projectname="" version="3.22.0-Białowieża">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["North_America_Albers_Equal_Area_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["North_America_Albers_Equal_Area_Conic",METHOD["Albers Equal Area",ID["EPSG",9822]],PARAMETER["Latitude of false origin",40,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",20,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",60,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. United States (USA) - Alabama; Alaska (mainland); Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[23.81,-172.54,86.46,-47.74]],ID["ESRI",102008]]</wkt>
+      <proj4>+proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>27131</srsid>
+      <srid>102008</srid>
+      <authid>ESRI:102008</authid>
+      <description>North_America_Albers_Equal_Area_Conic</description>
+      <projectionacronym>aea</projectionacronym>
+      <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer checked="Qt::Checked" id="haf_data_all_counties_3b623ffc_760d_4f1d_8c86_f1772a6a2502" source="../data/lesson10_final_project/haf_data_all_counties.csv?type=csv&amp;maxFields=10000&amp;detectTypes=no&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" legend_exp="" providerKey="delimitedtext" name="haf_data_all_counties" patch_size="-1,-1" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" id="MetroForeclosuresFiled_c672bc5a_1d0c_4ab9_a116_75a637a4c5c3" source="../data/lesson10_final_project/MetroForeclosuresFiled.csv?type=csv&amp;maxFields=10000&amp;detectTypes=no&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" legend_exp="" providerKey="delimitedtext" name="MetroForeclosuresFiled" patch_size="-1,-1" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" id="louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6" source="../data/lesson10_final_project/louisville_foreclosure_parcels.geojson" legend_exp="" providerKey="ogr" name="louisville_foreclosure_parcels" patch_size="-1,-1" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Unchecked" id="cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659" source="/vsizip/../data/module4/cb_2017_us_county_500k.zip/cb_2017_us_county_500k.shp|layername=cb_2017_us_county_500k" legend_exp="" providerKey="ogr" name="cb_2017_us_county_500k.shp" patch_size="-1,-1" expanded="1" legend_split_behavior="0">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659</item>
+      <item>MetroForeclosuresFiled_c672bc5a_1d0c_4ab9_a116_75a637a4c5c3</item>
+      <item>louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings maxScale="0" self-snapping="0" minScale="0" intersection-snapping="0" type="1" tolerance="12" scaleDependencyMode="0" enabled="0" mode="2" unit="1">
+    <individual-layer-settings>
+      <layer-setting units="1" maxScale="0" minScale="0" id="cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659" type="1" tolerance="12" enabled="0"/>
+      <layer-setting units="1" maxScale="0" minScale="0" id="louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6" type="1" tolerance="12" enabled="0"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>861144.87686557846609503</xmin>
+      <ymin>-183588.75788727612234652</ymin>
+      <xmax>904661.79769057838711888</xmax>
+      <ymax>-134013.14638227608520538</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>PROJCRS["North_America_Albers_Equal_Area_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["North_America_Albers_Equal_Area_Conic",METHOD["Albers Equal Area",ID["EPSG",9822]],PARAMETER["Latitude of false origin",40,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",20,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",60,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. United States (USA) - Alabama; Alaska (mainland); Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[23.81,-172.54,86.46,-47.74]],ID["ESRI",102008]]</wkt>
+        <proj4>+proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>27131</srsid>
+        <srid>102008</srid>
+        <authid>ESRI:102008</authid>
+        <description>North_America_Albers_Equal_Area_Conic</description>
+        <projectionacronym>aea</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" name="haf_data_all_counties" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="haf_data_all_counties_3b623ffc_760d_4f1d_8c86_f1772a6a2502" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" name="MetroForeclosuresFiled" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="MetroForeclosuresFiled_c672bc5a_1d0c_4ab9_a116_75a637a4c5c3" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" name="louisville_foreclosure_parcels" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6" visible="1" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer checked="Qt::Unchecked" open="true" showFeatureCount="0" name="cb_2017_us_county_500k.shp" drawingOrder="-1">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile layerid="cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659" visible="0" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <main-annotation-layer refreshOnNotifyEnabled="0" autoRefreshEnabled="0" autoRefreshTime="0" type="annotation" refreshOnNotifyMessage="" legendPlaceholderImage="">
+    <id>Annotations_08609807_9357_4c7c_bd1d_e8db411d9023</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername>Annotations</layername>
+    <srs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer refreshOnNotifyEnabled="0" geometry="No geometry" autoRefreshEnabled="0" maxScale="0" minScale="1e+08" autoRefreshTime="0" type="vector" wkbType="NoGeometry" readOnly="0" refreshOnNotifyMessage="" legendPlaceholderImage="" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0">
+      <id>MetroForeclosuresFiled_c672bc5a_1d0c_4ab9_a116_75a637a4c5c3</id>
+      <datasource>file:../data/lesson10_final_project/MetroForeclosuresFiled.csv?type=csv&amp;maxFields=10000&amp;detectTypes=no&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>MetroForeclosuresFiled</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" startExpression="" fixedDuration="0" enabled="0" mode="0" durationField="" endExpression="" accumulate="0" startField="" durationUnit="min" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="House Nr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Dir" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Street Name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="St Type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Post Dir" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Zip" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="L/S" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CD" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Neighborhood" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Full Parcel ID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Census Tract" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Action Filed" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Case#" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Case Style" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Sale Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Sale Price" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Purchaser" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="House Nr" name=""/>
+        <alias index="1" field="Dir" name=""/>
+        <alias index="2" field="Street Name" name=""/>
+        <alias index="3" field="St Type" name=""/>
+        <alias index="4" field="Post Dir" name=""/>
+        <alias index="5" field="Zip" name=""/>
+        <alias index="6" field="L/S" name=""/>
+        <alias index="7" field="CD" name=""/>
+        <alias index="8" field="Neighborhood" name=""/>
+        <alias index="9" field="Full Parcel ID" name=""/>
+        <alias index="10" field="Census Tract" name=""/>
+        <alias index="11" field="Action Filed" name=""/>
+        <alias index="12" field="Case#" name=""/>
+        <alias index="13" field="Case Style" name=""/>
+        <alias index="14" field="Sale Date" name=""/>
+        <alias index="15" field="Sale Price" name=""/>
+        <alias index="16" field="Purchaser" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="House Nr"/>
+        <default expression="" applyOnUpdate="0" field="Dir"/>
+        <default expression="" applyOnUpdate="0" field="Street Name"/>
+        <default expression="" applyOnUpdate="0" field="St Type"/>
+        <default expression="" applyOnUpdate="0" field="Post Dir"/>
+        <default expression="" applyOnUpdate="0" field="Zip"/>
+        <default expression="" applyOnUpdate="0" field="L/S"/>
+        <default expression="" applyOnUpdate="0" field="CD"/>
+        <default expression="" applyOnUpdate="0" field="Neighborhood"/>
+        <default expression="" applyOnUpdate="0" field="Full Parcel ID"/>
+        <default expression="" applyOnUpdate="0" field="Census Tract"/>
+        <default expression="" applyOnUpdate="0" field="Action Filed"/>
+        <default expression="" applyOnUpdate="0" field="Case#"/>
+        <default expression="" applyOnUpdate="0" field="Case Style"/>
+        <default expression="" applyOnUpdate="0" field="Sale Date"/>
+        <default expression="" applyOnUpdate="0" field="Sale Price"/>
+        <default expression="" applyOnUpdate="0" field="Purchaser"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="House Nr" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Dir" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Street Name" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="St Type" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Post Dir" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Zip" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="L/S" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="CD" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Neighborhood" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Full Parcel ID" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Census Tract" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Action Filed" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Case#" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Case Style" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Sale Date" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Sale Price" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="Purchaser" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="House Nr"/>
+        <constraint desc="" exp="" field="Dir"/>
+        <constraint desc="" exp="" field="Street Name"/>
+        <constraint desc="" exp="" field="St Type"/>
+        <constraint desc="" exp="" field="Post Dir"/>
+        <constraint desc="" exp="" field="Zip"/>
+        <constraint desc="" exp="" field="L/S"/>
+        <constraint desc="" exp="" field="CD"/>
+        <constraint desc="" exp="" field="Neighborhood"/>
+        <constraint desc="" exp="" field="Full Parcel ID"/>
+        <constraint desc="" exp="" field="Census Tract"/>
+        <constraint desc="" exp="" field="Action Filed"/>
+        <constraint desc="" exp="" field="Case#"/>
+        <constraint desc="" exp="" field="Case Style"/>
+        <constraint desc="" exp="" field="Sale Date"/>
+        <constraint desc="" exp="" field="Sale Price"/>
+        <constraint desc="" exp="" field="Purchaser"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer geometry="Polygon" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" wkbType="MultiPolygon" autoRefreshTime="0" simplifyLocal="1" maxScale="0" minScale="100000000" symbologyReferenceScale="-1" legendPlaceholderImage="" refreshOnNotifyEnabled="0" simplifyDrawingHints="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>-179.14890900000000329</xmin>
+        <ymin>-14.54869899999999916</ymin>
+        <xmax>179.77846999999999866</xmax>
+        <ymax>71.36516199999999799</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-179.14890900000000329</xmin>
+        <ymin>-14.54869899999999916</ymin>
+        <xmax>179.77847000000011235</xmax>
+        <ymax>71.36516199999996957</ymax>
+      </wgs84extent>
+      <id>cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659</id>
+      <datasource>/vsizip/../data/module4/cb_2017_us_county_500k.zip/cb_2017_us_county_500k.shp|layername=cb_2017_us_county_500k</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>cb_2017_us_county_500k.shp</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. Puerto Rico. United States (USA) - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Hawaii; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Virgin Islands. British Virgin Islands."],BBOX[14.92,167.65,86.46,-47.74]],ID["EPSG",4269]]</wkt>
+          <proj4>+proj=longlat +datum=NAD83 +no_defs</proj4>
+          <srsid>3401</srsid>
+          <srid>4269</srid>
+          <authid>EPSG:4269</authid>
+          <description>NAD83</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" startExpression="" fixedDuration="0" enabled="0" mode="0" durationField="" endExpression="" accumulate="0" startField="" durationUnit="min" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" type="singleSymbol" forceraster="0" referencescale="-1">
+        <symbols>
+          <symbol alpha="1" type="fill" name="0" clip_to_extent="1" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" pass="0" locked="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="114,155,111,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="114,155,111,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="STATEFP" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COUNTYFP" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COUNTYNS" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AFFGEOID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GEOID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LSAD" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ALAND" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AWATER" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="STATEFP" name=""/>
+        <alias index="1" field="COUNTYFP" name=""/>
+        <alias index="2" field="COUNTYNS" name=""/>
+        <alias index="3" field="AFFGEOID" name=""/>
+        <alias index="4" field="GEOID" name=""/>
+        <alias index="5" field="NAME" name=""/>
+        <alias index="6" field="LSAD" name=""/>
+        <alias index="7" field="ALAND" name=""/>
+        <alias index="8" field="AWATER" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="STATEFP"/>
+        <default expression="" applyOnUpdate="0" field="COUNTYFP"/>
+        <default expression="" applyOnUpdate="0" field="COUNTYNS"/>
+        <default expression="" applyOnUpdate="0" field="AFFGEOID"/>
+        <default expression="" applyOnUpdate="0" field="GEOID"/>
+        <default expression="" applyOnUpdate="0" field="NAME"/>
+        <default expression="" applyOnUpdate="0" field="LSAD"/>
+        <default expression="" applyOnUpdate="0" field="ALAND"/>
+        <default expression="" applyOnUpdate="0" field="AWATER"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="STATEFP" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="COUNTYFP" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="COUNTYNS" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="AFFGEOID" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="GEOID" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="NAME" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="LSAD" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="ALAND" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="AWATER" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="STATEFP"/>
+        <constraint desc="" exp="" field="COUNTYFP"/>
+        <constraint desc="" exp="" field="COUNTYNS"/>
+        <constraint desc="" exp="" field="AFFGEOID"/>
+        <constraint desc="" exp="" field="GEOID"/>
+        <constraint desc="" exp="" field="NAME"/>
+        <constraint desc="" exp="" field="LSAD"/>
+        <constraint desc="" exp="" field="ALAND"/>
+        <constraint desc="" exp="" field="AWATER"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;NAME&quot;" sortOrder="0">
+        <columns>
+          <column type="field" name="STATEFP" hidden="0" width="-1"/>
+          <column type="field" name="COUNTYFP" hidden="0" width="-1"/>
+          <column type="field" name="COUNTYNS" hidden="0" width="-1"/>
+          <column type="field" name="AFFGEOID" hidden="0" width="-1"/>
+          <column type="field" name="GEOID" hidden="0" width="-1"/>
+          <column type="field" name="NAME" hidden="0" width="-1"/>
+          <column type="field" name="LSAD" hidden="0" width="-1"/>
+          <column type="field" name="ALAND" hidden="0" width="-1"/>
+          <column type="field" name="AWATER" hidden="0" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"NAME"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" geometry="No geometry" autoRefreshEnabled="0" maxScale="0" minScale="1e+08" autoRefreshTime="0" type="vector" wkbType="NoGeometry" readOnly="0" refreshOnNotifyMessage="" legendPlaceholderImage="" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0">
+      <id>haf_data_all_counties_3b623ffc_760d_4f1d_8c86_f1772a6a2502</id>
+      <datasource>file:../data/lesson10_final_project/haf_data_all_counties.csv?type=csv&amp;maxFields=10000&amp;detectTypes=no&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>haf_data_all_counties</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="">delimitedtext</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" startExpression="" fixedDuration="0" enabled="0" mode="0" durationField="" endExpression="" accumulate="0" startField="" durationUnit="min" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <customproperties>
+        <Option type="Map">
+          <Option type="List" name="dualview/previewExpressions">
+            <Option type="QString" value="&quot;puma_estimate&quot;"/>
+          </Option>
+        </Option>
+      </customproperties>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="puma_estimate" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="st" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="county" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="homeowners_less_100ami" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="homeowners_less_150ami" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mortgage_less_100ami" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mortgage_less_150ami" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="total_homeowners" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="total_mortgages" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="100to150_ami_non_white" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="100to150_ami_white" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="predicted_foreclosure_rate" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="black_ho_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="white_ho_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="asian_ho_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="hisp_ho_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="other_ho_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="mortgage_share" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="med_owner_cost" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="med_owncost_income_ratio" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="cost_burden" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="share_cost_burden" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="share_severe_burden" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="puma_estimate" name=""/>
+        <alias index="1" field="st" name=""/>
+        <alias index="2" field="county" name=""/>
+        <alias index="3" field="homeowners_less_100ami" name=""/>
+        <alias index="4" field="homeowners_less_150ami" name=""/>
+        <alias index="5" field="mortgage_less_100ami" name=""/>
+        <alias index="6" field="mortgage_less_150ami" name=""/>
+        <alias index="7" field="total_homeowners" name=""/>
+        <alias index="8" field="total_mortgages" name=""/>
+        <alias index="9" field="100to150_ami_non_white" name=""/>
+        <alias index="10" field="100to150_ami_white" name=""/>
+        <alias index="11" field="predicted_foreclosure_rate" name=""/>
+        <alias index="12" field="black_ho_share" name=""/>
+        <alias index="13" field="white_ho_share" name=""/>
+        <alias index="14" field="asian_ho_share" name=""/>
+        <alias index="15" field="hisp_ho_share" name=""/>
+        <alias index="16" field="other_ho_share" name=""/>
+        <alias index="17" field="mortgage_share" name=""/>
+        <alias index="18" field="med_owner_cost" name=""/>
+        <alias index="19" field="med_owncost_income_ratio" name=""/>
+        <alias index="20" field="cost_burden" name=""/>
+        <alias index="21" field="share_cost_burden" name=""/>
+        <alias index="22" field="share_severe_burden" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="puma_estimate"/>
+        <default expression="" applyOnUpdate="0" field="st"/>
+        <default expression="" applyOnUpdate="0" field="county"/>
+        <default expression="" applyOnUpdate="0" field="homeowners_less_100ami"/>
+        <default expression="" applyOnUpdate="0" field="homeowners_less_150ami"/>
+        <default expression="" applyOnUpdate="0" field="mortgage_less_100ami"/>
+        <default expression="" applyOnUpdate="0" field="mortgage_less_150ami"/>
+        <default expression="" applyOnUpdate="0" field="total_homeowners"/>
+        <default expression="" applyOnUpdate="0" field="total_mortgages"/>
+        <default expression="" applyOnUpdate="0" field="100to150_ami_non_white"/>
+        <default expression="" applyOnUpdate="0" field="100to150_ami_white"/>
+        <default expression="" applyOnUpdate="0" field="predicted_foreclosure_rate"/>
+        <default expression="" applyOnUpdate="0" field="black_ho_share"/>
+        <default expression="" applyOnUpdate="0" field="white_ho_share"/>
+        <default expression="" applyOnUpdate="0" field="asian_ho_share"/>
+        <default expression="" applyOnUpdate="0" field="hisp_ho_share"/>
+        <default expression="" applyOnUpdate="0" field="other_ho_share"/>
+        <default expression="" applyOnUpdate="0" field="mortgage_share"/>
+        <default expression="" applyOnUpdate="0" field="med_owner_cost"/>
+        <default expression="" applyOnUpdate="0" field="med_owncost_income_ratio"/>
+        <default expression="" applyOnUpdate="0" field="cost_burden"/>
+        <default expression="" applyOnUpdate="0" field="share_cost_burden"/>
+        <default expression="" applyOnUpdate="0" field="share_severe_burden"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="puma_estimate" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="st" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="county" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="homeowners_less_100ami" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="homeowners_less_150ami" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="mortgage_less_100ami" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="mortgage_less_150ami" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="total_homeowners" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="total_mortgages" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="100to150_ami_non_white" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="100to150_ami_white" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="predicted_foreclosure_rate" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="black_ho_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="white_ho_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="asian_ho_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="hisp_ho_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="other_ho_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="mortgage_share" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="med_owner_cost" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="med_owncost_income_ratio" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="cost_burden" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="share_cost_burden" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="share_severe_burden" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="puma_estimate"/>
+        <constraint desc="" exp="" field="st"/>
+        <constraint desc="" exp="" field="county"/>
+        <constraint desc="" exp="" field="homeowners_less_100ami"/>
+        <constraint desc="" exp="" field="homeowners_less_150ami"/>
+        <constraint desc="" exp="" field="mortgage_less_100ami"/>
+        <constraint desc="" exp="" field="mortgage_less_150ami"/>
+        <constraint desc="" exp="" field="total_homeowners"/>
+        <constraint desc="" exp="" field="total_mortgages"/>
+        <constraint desc="" exp="" field="100to150_ami_non_white"/>
+        <constraint desc="" exp="" field="100to150_ami_white"/>
+        <constraint desc="" exp="" field="predicted_foreclosure_rate"/>
+        <constraint desc="" exp="" field="black_ho_share"/>
+        <constraint desc="" exp="" field="white_ho_share"/>
+        <constraint desc="" exp="" field="asian_ho_share"/>
+        <constraint desc="" exp="" field="hisp_ho_share"/>
+        <constraint desc="" exp="" field="other_ho_share"/>
+        <constraint desc="" exp="" field="mortgage_share"/>
+        <constraint desc="" exp="" field="med_owner_cost"/>
+        <constraint desc="" exp="" field="med_owncost_income_ratio"/>
+        <constraint desc="" exp="" field="cost_burden"/>
+        <constraint desc="" exp="" field="share_cost_burden"/>
+        <constraint desc="" exp="" field="share_severe_burden"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;county&quot;" sortOrder="1">
+        <columns>
+          <column type="field" name="puma_estimate" hidden="0" width="130"/>
+          <column type="field" name="st" hidden="0" width="-1"/>
+          <column type="field" name="county" hidden="0" width="-1"/>
+          <column type="field" name="homeowners_less_100ami" hidden="0" width="217"/>
+          <column type="field" name="homeowners_less_150ami" hidden="0" width="217"/>
+          <column type="field" name="mortgage_less_100ami" hidden="0" width="229"/>
+          <column type="field" name="mortgage_less_150ami" hidden="0" width="231"/>
+          <column type="field" name="total_homeowners" hidden="0" width="-1"/>
+          <column type="field" name="total_mortgages" hidden="0" width="-1"/>
+          <column type="field" name="100to150_ami_non_white" hidden="0" width="-1"/>
+          <column type="field" name="100to150_ami_white" hidden="0" width="-1"/>
+          <column type="field" name="predicted_foreclosure_rate" hidden="0" width="-1"/>
+          <column type="field" name="black_ho_share" hidden="0" width="-1"/>
+          <column type="field" name="white_ho_share" hidden="0" width="-1"/>
+          <column type="field" name="asian_ho_share" hidden="0" width="-1"/>
+          <column type="field" name="hisp_ho_share" hidden="0" width="-1"/>
+          <column type="field" name="other_ho_share" hidden="0" width="-1"/>
+          <column type="field" name="mortgage_share" hidden="0" width="-1"/>
+          <column type="field" name="med_owner_cost" hidden="0" width="-1"/>
+          <column type="field" name="med_owncost_income_ratio" hidden="0" width="-1"/>
+          <column type="field" name="cost_burden" hidden="0" width="-1"/>
+          <column type="field" name="share_cost_burden" hidden="0" width="-1"/>
+          <column type="field" name="share_severe_burden" hidden="0" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"puma_estimate"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer geometry="Polygon" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" labelsEnabled="0" readOnly="0" type="vector" hasScaleBasedVisibilityFlag="0" wkbType="MultiPolygon" autoRefreshTime="0" simplifyLocal="1" maxScale="0" minScale="100000000" symbologyReferenceScale="-1" legendPlaceholderImage="" refreshOnNotifyEnabled="0" simplifyDrawingHints="1" simplifyMaxScale="1">
+      <extent>
+        <xmin>831658.69590000004973263</xmin>
+        <ymin>-191710.41990000000805594</ymin>
+        <xmax>873103.38240000000223517</xmax>
+        <ymax>-144495.55179999998654239</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>831658.69590000004973263</xmin>
+        <ymin>-191710.41990000000805594</ymin>
+        <xmax>873103.38240000000223517</xmax>
+        <ymax>-144495.55179999998654239</ymax>
+      </wgs84extent>
+      <id>louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6</id>
+      <datasource>../data/lesson10_final_project/louisville_foreclosure_parcels.geojson</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>louisville_foreclosure_parcels</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxx="0" minz="0" maxy="0" dimensions="2" crs="" maxz="0" minx="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal limitMode="0" startExpression="" fixedDuration="0" enabled="0" mode="0" durationField="" endExpression="" accumulate="0" startField="" durationUnit="min" endField="">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 symbollevels="0" enableorderby="0" type="singleSymbol" forceraster="0" referencescale="-1">
+        <symbols>
+          <symbol alpha="1" type="fill" name="0" clip_to_extent="1" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" enabled="1" pass="0" locked="0">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="125,139,143,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="125,139,143,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="PARCELID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LRSN" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GlobalID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_House Nr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Dir" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Street Name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_St Type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Post Dir" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Zip" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_L/S" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_CD" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Neighborhood" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Census Tract" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Action Filed" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Case#" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Case Style" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Sale Date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Sale Price" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MetroForeclosuresFiled_Purchaser" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" field="PARCELID" name=""/>
+        <alias index="1" field="LRSN" name=""/>
+        <alias index="2" field="GlobalID" name=""/>
+        <alias index="3" field="MetroForeclosuresFiled_House Nr" name=""/>
+        <alias index="4" field="MetroForeclosuresFiled_Dir" name=""/>
+        <alias index="5" field="MetroForeclosuresFiled_Street Name" name=""/>
+        <alias index="6" field="MetroForeclosuresFiled_St Type" name=""/>
+        <alias index="7" field="MetroForeclosuresFiled_Post Dir" name=""/>
+        <alias index="8" field="MetroForeclosuresFiled_Zip" name=""/>
+        <alias index="9" field="MetroForeclosuresFiled_L/S" name=""/>
+        <alias index="10" field="MetroForeclosuresFiled_CD" name=""/>
+        <alias index="11" field="MetroForeclosuresFiled_Neighborhood" name=""/>
+        <alias index="12" field="MetroForeclosuresFiled_Census Tract" name=""/>
+        <alias index="13" field="MetroForeclosuresFiled_Action Filed" name=""/>
+        <alias index="14" field="MetroForeclosuresFiled_Case#" name=""/>
+        <alias index="15" field="MetroForeclosuresFiled_Case Style" name=""/>
+        <alias index="16" field="MetroForeclosuresFiled_Sale Date" name=""/>
+        <alias index="17" field="MetroForeclosuresFiled_Sale Price" name=""/>
+        <alias index="18" field="MetroForeclosuresFiled_Purchaser" name=""/>
+      </aliases>
+      <defaults>
+        <default expression="" applyOnUpdate="0" field="PARCELID"/>
+        <default expression="" applyOnUpdate="0" field="LRSN"/>
+        <default expression="" applyOnUpdate="0" field="GlobalID"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_House Nr"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Dir"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Street Name"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_St Type"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Post Dir"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Zip"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_L/S"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_CD"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Neighborhood"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Census Tract"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Action Filed"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Case#"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Case Style"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Sale Date"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Sale Price"/>
+        <default expression="" applyOnUpdate="0" field="MetroForeclosuresFiled_Purchaser"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" notnull_strength="0" field="PARCELID" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="LRSN" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="GlobalID" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_House Nr" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Dir" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Street Name" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_St Type" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Post Dir" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Zip" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_L/S" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_CD" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Neighborhood" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Census Tract" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Action Filed" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Case#" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Case Style" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Sale Date" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Sale Price" constraints="0" exp_strength="0"/>
+        <constraint unique_strength="0" notnull_strength="0" field="MetroForeclosuresFiled_Purchaser" constraints="0" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="PARCELID"/>
+        <constraint desc="" exp="" field="LRSN"/>
+        <constraint desc="" exp="" field="GlobalID"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_House Nr"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Dir"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Street Name"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_St Type"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Post Dir"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Zip"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_L/S"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_CD"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Neighborhood"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Census Tract"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Action Filed"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Case#"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Case Style"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Sale Date"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Sale Price"/>
+        <constraint desc="" exp="" field="MetroForeclosuresFiled_Purchaser"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="cb_2017_us_county_500k_shp_51147858_bd7e_4254_bb6e_24294ce24659"/>
+    <layer id="MetroForeclosuresFiled_c672bc5a_1d0c_4ab9_a116_75a637a4c5c3"/>
+    <layer id="louisville_foreclosure_parcels_b32994f8_7d13_4bbf_9b9a_906e58e102a6"/>
+  </layerorder>
+  <properties>
+    <DefaultStyles>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">0</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">0</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">0</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">0</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Measure>
+      <Ellipsoid type="QString">EPSG:7019</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">1</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <RenderMapTile type="bool">false</RenderMapTile>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSLayers type="QStringList"/>
+    <WFSTLayers>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSFeatureInfoUseAttributeFormSettings type="bool">false</WMSFeatureInfoUseAttributeFormSettings>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSTileBuffer type="int">0</WMSTileBuffer>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSGrids>
+      <CRS type="QStringList"/>
+      <Config type="QStringList"/>
+    </WMTSGrids>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext>
+    <srcDest coordinateOp="+proj=noop" allowFallback="1">
+      <src>
+        <spatialrefsys>
+          <wkt>GEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Geodesy."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. Puerto Rico. United States (USA) - Alabama; Alaska; Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Hawaii; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming. US Virgin Islands. British Virgin Islands."],BBOX[14.92,167.65,86.46,-47.74]],ID["EPSG",4269]]</wkt>
+          <proj4>+proj=longlat +datum=NAD83 +no_defs</proj4>
+          <srsid>3401</srsid>
+          <srid>4269</srid>
+          <authid>EPSG:4269</authid>
+          <description>NAD83</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </src>
+      <dest>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </dest>
+    </srcDest>
+    <srcDest coordinateOp="+proj=pipeline +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80" allowFallback="1">
+      <src>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",ENSEMBLE["World Geodetic System 1984 ensemble",MEMBER["World Geodetic System 1984 (Transit)"],MEMBER["World Geodetic System 1984 (G730)"],MEMBER["World Geodetic System 1984 (G873)"],MEMBER["World Geodetic System 1984 (G1150)"],MEMBER["World Geodetic System 1984 (G1674)"],MEMBER["World Geodetic System 1984 (G1762)"],ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ENSEMBLEACCURACY[2.0]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["Horizontal component of 3D system."],AREA["World."],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </src>
+      <dest>
+        <spatialrefsys>
+          <wkt>PROJCRS["North_America_Albers_Equal_Area_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["North_America_Albers_Equal_Area_Conic",METHOD["Albers Equal Area",ID["EPSG",9822]],PARAMETER["Latitude of false origin",40,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",20,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",60,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. United States (USA) - Alabama; Alaska (mainland); Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[23.81,-172.54,86.46,-47.74]],ID["ESRI",102008]]</wkt>
+          <proj4>+proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>27131</srsid>
+          <srid>102008</srid>
+          <authid>ESRI:102008</authid>
+          <description>North_America_Albers_Equal_Area_Conic</description>
+          <projectionacronym>aea</projectionacronym>
+          <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </dest>
+    </srcDest>
+  </transformContext>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>Evan Kerr</author>
+    <creation>2021-12-07T19:41:02</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent ymin="-183588.75788727612234652" xmin="839907.85757731343619525" ymax="-134013.14638227608520538" xmax="925898.81697884341701865">
+      <spatialrefsys>
+        <wkt>PROJCRS["North_America_Albers_Equal_Area_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["North_America_Albers_Equal_Area_Conic",METHOD["Albers Equal Area",ID["EPSG",9822]],PARAMETER["Latitude of false origin",40,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",20,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",60,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. United States (USA) - Alabama; Alaska (mainland); Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[23.81,-172.54,86.46,-47.74]],ID["ESRI",102008]]</wkt>
+        <proj4>+proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>27131</srsid>
+        <srid>102008</srid>
+        <authid>ESRI:102008</authid>
+        <description>North_America_Albers_Equal_Area_Conic</description>
+        <projectionacronym>aea</projectionacronym>
+        <ellipsoidacronym>EPSG:7019</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings cumulativeTemporalRange="0" timeStepUnit="h" frameRate="1" timeStep="1"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option type="QChar" value="" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="direction_format"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="QChar" value="" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
