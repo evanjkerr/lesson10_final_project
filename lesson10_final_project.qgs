@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" saveUser="evanj" saveUserFull="Evan Kerr" saveDateTime="2021-12-18T11:49:47" version="3.22.0-Białowieża">
+<qgis projectname="" saveUser="evanj" saveUserFull="Evan Kerr" saveDateTime="2021-12-18T12:31:38" version="3.22.0-Białowieża">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -102,10 +102,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>31628.77146335341967642</xmin>
-      <ymin>-1370544.80613466748036444</ymin>
-      <xmax>2068998.11569559969939291</xmax>
-      <ymax>1265001.88178102136589587</ymax>
+      <xmin>-32214.50774642708711326</xmin>
+      <ymin>-1416069.28212901577353477</ymin>
+      <xmax>2005154.83648581011220813</xmax>
+      <ymax>1219477.4057866670191288</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -1474,7 +1474,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1486,7 +1486,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1516,7 +1516,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1528,7 +1528,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1558,7 +1558,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1570,7 +1570,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1600,7 +1600,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1612,7 +1612,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1642,7 +1642,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1654,7 +1654,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1686,7 +1686,7 @@ def my_form_open(dialog, layer, feature):
                 <Option type="QString" value="0,0" name="offset"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                 <Option type="QString" value="MM" name="offset_unit"/>
-                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="35,35,35,0" name="outline_color"/>
                 <Option type="QString" value="solid" name="outline_style"/>
                 <Option type="QString" value="0.26" name="outline_width"/>
                 <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -1698,7 +1698,7 @@ def my_form_open(dialog, layer, feature):
               <prop v="0,0" k="offset"/>
               <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
               <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="35,35,35,0" k="outline_color"/>
               <prop v="solid" k="outline_style"/>
               <prop v="0.26" k="outline_width"/>
               <prop v="MM" k="outline_width_unit"/>
@@ -1738,6 +1738,9 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <customproperties>
         <Option type="Map">
+          <Option type="List" name="dualview/previewExpressions">
+            <Option type="QString" value="&quot;fid&quot;"/>
+          </Option>
           <Option type="int" value="0" name="embeddedWidgets/count"/>
           <Option type="invalid" name="variableNames"/>
           <Option type="invalid" name="variableValues"/>
@@ -5354,6 +5357,9 @@ def my_form_open(dialog, layer, feature):
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
+    <Layouts>
+      <lastLayoutExportDir type="QString">C:/Users/evanj/OneDrive/nmp/map671/lesson10_final_project/images/foreclosure_sum_8000.png</lastLayoutExportDir>
+    </Layouts>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
@@ -5642,7 +5648,25 @@ def my_form_open(dialog, layer, feature):
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem titleAlignment="4" templateUuid="{d2a24ffa-7854-407c-98c1-0d9ba7b204e6}" maxSymbolSize="0" blendMode="0" resizeToContents="1" symbolHeight="4" boxSpace="2" positionLock="false" wmsLegendHeight="25" symbolWidth="7" zValue="3" wmsLegendWidth="50" equalColumnWidth="0" minSymbolSize="0" fontColor="#e3e3e3" background="false" rasterBorder="1" rasterBorderWidth="0" referencePoint="0" excludeFromExports="0" lineSpacing="1" groupUuid="" itemRotation="0" columnCount="1" outlineWidthM="0.3,mm" legendFilterByAtlas="0" frameJoinStyle="miter" position="8.29716,208.353,mm" columnSpace="2" splitLayer="0" visibility="1" size="74.5,62.2,mm" id="" wrapChar="" uuid="{d2a24ffa-7854-407c-98c1-0d9ba7b204e6}" symbolAlignment="1" rasterBorderColor="0,0,0,255" map_uuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" type="65642" opacity="1" title="Legacy City Foreclosures" positionOnPage="8.29716,208.353,mm" frame="false">
+      <LayoutItem size="55.2756,67.7692,mm" background="false" opacity="1" marginX="0" positionOnPage="179.167,190.152,mm" groupUuid="" visibility="1" halign="4" itemRotation="0" frame="false" uuid="{81a851fe-bb89-4f7c-b536-776f459d7098}" marginY="0" id="" position="179.167,190.152,mm" positionLock="false" outlineWidthM="0.3,mm" htmlState="0" excludeFromExports="0" templateUuid="{81a851fe-bb89-4f7c-b536-776f459d7098}" zValue="4" referencePoint="0" frameJoinStyle="miter" type="65641" blendMode="0" labelText="Mapped by Evan Kerr using QGIS 3.22 on Windows 11 Pro on December 18, 2021. &#xa;&#xa;Data was created by The Urban Institute and made available through the National Council of State Housing Authorities (https://www.ncsha.org/resource/urban-institute-homeowner-assistance-fund-county-level-targeting-data/). " valign="128">
+        <FrameColor green="0" blue="0" red="0" alpha="255"/>
+        <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties>
+            <Option/>
+          </customproperties>
+        </LayoutObject>
+        <LabelFont style="" description="MS Shell Dlg 2,9,-1,5,50,0,0,0,0,0"/>
+        <FontColor green="227" blue="227" red="227" alpha="255"/>
+      </LayoutItem>
+      <LayoutItem titleAlignment="4" templateUuid="{d2a24ffa-7854-407c-98c1-0d9ba7b204e6}" maxSymbolSize="0" blendMode="0" resizeToContents="1" symbolHeight="4" boxSpace="2" positionLock="false" wmsLegendHeight="25" symbolWidth="7" zValue="3" wmsLegendWidth="50" equalColumnWidth="0" minSymbolSize="0" fontColor="#e3e3e3" background="false" rasterBorder="1" rasterBorderWidth="0" referencePoint="0" excludeFromExports="0" lineSpacing="1" groupUuid="" itemRotation="0" columnCount="1" outlineWidthM="0.3,mm" legendFilterByAtlas="0" frameJoinStyle="miter" position="13.2214,192.937,mm" columnSpace="2" splitLayer="0" visibility="1" size="86,62.2,mm" id="" wrapChar="" uuid="{d2a24ffa-7854-407c-98c1-0d9ba7b204e6}" symbolAlignment="1" rasterBorderColor="0,0,0,255" map_uuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" type="65642" opacity="1" title="US Foreclosures (East Coast)" positionOnPage="13.2214,192.937,mm" frame="false">
         <FrameColor green="0" blue="0" red="0" alpha="255"/>
         <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
         <LayoutObject>
@@ -5681,8 +5705,8 @@ def my_form_open(dialog, layer, feature):
           <layer-tree-layer providerKey="delimitedtext" expanded="1" checked="Qt::Checked" id="haf_data_all_counties_6fa58646_49aa_44e6_8bbc_c21f4d9d2b65" source="../data/lesson10_final_project/haf_data_all_counties.csv?type=csv&amp;maxFields=10000&amp;detectTypes=no&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" name="haf_data_all_counties" patch_size="6,6" legend_exp="" legend_split_behavior="0">
             <customproperties>
               <Option type="Map">
-                <Option type="QString" value="Hexgrid = 10 sqm" name="cached_name"/>
-                <Option type="QString" value="Hexgrid = 10 sqm" name="legend/title-label"/>
+                <Option type="QString" value="Hexgrid = 10-mile-diagonal" name="cached_name"/>
+                <Option type="QString" value="Hexgrid = 10-mile-diagonal" name="legend/title-label"/>
               </Option>
             </customproperties>
           </layer-tree-layer>
@@ -5700,7 +5724,7 @@ def my_form_open(dialog, layer, feature):
           </custom-order>
         </layer-tree-group>
       </LayoutItem>
-      <LayoutItem size="95.1488,18.6249,mm" background="false" opacity="1" marginX="0" positionOnPage="109.75,9.29908,mm" groupUuid="" visibility="1" halign="4" itemRotation="0" frame="false" uuid="{6f2e0a5c-accb-4cad-a56a-5ed244a96397}" marginY="-1" id="" position="109.75,9.29908,mm" positionLock="false" outlineWidthM="0.3,mm" htmlState="0" excludeFromExports="0" templateUuid="{6f2e0a5c-accb-4cad-a56a-5ed244a96397}" zValue="2" referencePoint="0" frameJoinStyle="miter" type="65641" blendMode="0" labelText="FORECLOSURES" valign="128">
+      <LayoutItem size="95.1488,18.6249,mm" background="false" opacity="1" marginX="0" positionOnPage="77.4256,6.64962,mm" groupUuid="" visibility="1" halign="4" itemRotation="0" frame="false" uuid="{6f2e0a5c-accb-4cad-a56a-5ed244a96397}" marginY="-1" id="" position="77.4256,6.64962,mm" positionLock="false" outlineWidthM="0.3,mm" htmlState="0" excludeFromExports="0" templateUuid="{6f2e0a5c-accb-4cad-a56a-5ed244a96397}" zValue="2" referencePoint="0" frameJoinStyle="miter" type="65641" blendMode="0" labelText="FORECLOSURES" valign="128">
         <FrameColor green="0" blue="0" red="0" alpha="255"/>
         <BackgroundColor green="255" blue="255" red="255" alpha="255"/>
         <LayoutObject>
@@ -5718,7 +5742,7 @@ def my_form_open(dialog, layer, feature):
         <LabelFont style="Regular" description="MS Shell Dlg 2,35,-1,5,50,0,0,1,0,0,Regular"/>
         <FontColor green="227" blue="227" red="227" alpha="255"/>
       </LayoutItem>
-      <LayoutItem size="234.443,300,mm" isTemporal="0" background="false" opacity="1" positionOnPage="15.5572,-2.87898e-15,mm" groupUuid="" visibility="1" itemRotation="0" followPreset="false" frame="false" uuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" keepLayerSet="true" id="Map 1" position="15.5572,-2.87898e-15,mm" mapRotation="0" positionLock="false" outlineWidthM="0.3,mm" excludeFromExports="0" templateUuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" zValue="1" drawCanvasItems="true" referencePoint="0" frameJoinStyle="miter" mapFlags="0" type="65639" blendMode="0" followPresetName="" labelMargin="0,mm">
+      <LayoutItem size="234.443,300,mm" isTemporal="0" background="false" opacity="1" positionOnPage="0,-3.13007e-14,mm" groupUuid="" visibility="1" itemRotation="0" followPreset="false" frame="false" uuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" keepLayerSet="true" id="Hexgrid Foreclosures" position="0,-3.13007e-14,mm" mapRotation="0" positionLock="false" outlineWidthM="0.3,mm" excludeFromExports="0" templateUuid="{36ed91cc-12ed-409d-b7d8-ad48d248b953}" zValue="1" drawCanvasItems="true" referencePoint="0" frameJoinStyle="miter" mapFlags="0" type="65639" blendMode="0" followPresetName="" labelMargin="0,mm">
         <FrameColor green="0" blue="0" red="0" alpha="255"/>
         <BackgroundColor green="0" blue="0" red="0" alpha="255"/>
         <LayoutObject>
@@ -5733,7 +5757,7 @@ def my_form_open(dialog, layer, feature):
             <Option/>
           </customproperties>
         </LayoutObject>
-        <Extent xmin="-140662.24329674677574076" ymin="-1746772.92993467324413359" xmax="2145155.31354770995676517" ymax="1178227.07304882653988898"/>
+        <Extent xmin="-140662.24329674663022161" ymin="-1746772.92993467347696424" xmax="2145155.31354770995676517" ymax="1178227.07304882677271962"/>
         <LayerSet>
           <Layer source="foreclosure_sum_hexgrid.gpkg|layername=foreclosure_sum_hexgrid" name="foreclosure_sum_hexgrid" provider="ogr">foreclosure_sum_hexgrid_d141cd09_d0b1_4b09_a4c0_59797eae2dbb</Layer>
           <Layer source="C:/Users/evanj/OneDrive/nmp/map671/data/lesson10_final_project/us_counties_foreclosures.gpkg|layername=us_counties_foreclosures|subset=&quot;STATEFP&quot; = '21' OR &quot;STATEFP&quot; = '27' OR &quot;STATEFP&quot; = '26' OR &quot;STATEFP&quot; = '55' OR &quot;STATEFP&quot; = '17' OR &quot;STATEFP&quot; = '18' OR &quot;STATEFP&quot; = '12' OR &quot;STATEFP&quot; = '13' OR &quot;STATEFP&quot; = '47' OR &quot;STATEFP&quot; = '45' OR &quot;STATEFP&quot; = '51' OR &quot;STATEFP&quot; = '37' OR &quot;STATEFP&quot; = '39' OR &quot;STATEFP&quot; = '54' OR &quot;STATEFP&quot; = '24' OR &quot;STATEFP&quot; = '25' OR &quot;STATEFP&quot; = '33' OR &quot;STATEFP&quot; = '34' OR &quot;STATEFP&quot; = '09' OR &quot;STATEFP&quot; = '10' OR &quot;STATEFP&quot; = '11' OR &quot;STATEFP&quot; = '42' OR &quot;STATEFP&quot; = '44' OR &quot;STATEFP&quot; = '50' OR &quot;STATEFP&quot; = '36' OR &quot;STATEFP&quot; = '23'" name="us_counties_foreclosures" provider="ogr">us_counties_foreclosures_d9bde060_9ec5_41f6_abbf_c98d64bef2ee</Layer>
@@ -5778,7 +5802,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -5790,7 +5814,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -5820,7 +5844,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -5832,7 +5856,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -5862,7 +5886,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -5874,7 +5898,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -5904,7 +5928,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -5916,7 +5940,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -5946,7 +5970,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -5958,7 +5982,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -5990,7 +6014,7 @@ def my_form_open(dialog, layer, feature):
                         <Option type="QString" value="0,0" name="offset"/>
                         <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
                         <Option type="QString" value="MM" name="offset_unit"/>
-                        <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                        <Option type="QString" value="35,35,35,0" name="outline_color"/>
                         <Option type="QString" value="solid" name="outline_style"/>
                         <Option type="QString" value="0.26" name="outline_width"/>
                         <Option type="QString" value="MM" name="outline_width_unit"/>
@@ -6002,7 +6026,7 @@ def my_form_open(dialog, layer, feature):
                       <prop v="0,0" k="offset"/>
                       <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
                       <prop v="MM" k="offset_unit"/>
-                      <prop v="35,35,35,255" k="outline_color"/>
+                      <prop v="35,35,35,0" k="outline_color"/>
                       <prop v="solid" k="outline_style"/>
                       <prop v="0.26" k="outline_width"/>
                       <prop v="MM" k="outline_width_unit"/>
@@ -6042,6 +6066,9 @@ def my_form_open(dialog, layer, feature):
               </renderer-v2>
               <customproperties>
                 <Option type="Map">
+                  <Option type="List" name="dualview/previewExpressions">
+                    <Option type="QString" value="&quot;fid&quot;"/>
+                  </Option>
                   <Option type="int" value="0" name="embeddedWidgets/count"/>
                   <Option type="invalid" name="variableNames"/>
                   <Option type="invalid" name="variableValues"/>
@@ -7077,6 +7104,12 @@ def my_form_open(dialog, layer, feature):
       <customproperties>
         <Option type="Map">
           <Option type="QString" value="png" name="atlasRasterFormat"/>
+          <Option type="bool" value="true" name="imageAntialias"/>
+          <Option type="int" value="0" name="imageCropMarginBottom"/>
+          <Option type="int" value="0" name="imageCropMarginLeft"/>
+          <Option type="int" value="0" name="imageCropMarginRight"/>
+          <Option type="int" value="0" name="imageCropMarginTop"/>
+          <Option type="bool" value="false" name="imageCropToContents"/>
           <Option type="bool" value="true" name="singleFile"/>
         </Option>
       </customproperties>
@@ -7086,7 +7119,7 @@ def my_form_open(dialog, layer, feature):
   <Bookmarks/>
   <ProjectViewSettings UseProjectScales="0">
     <Scales/>
-    <DefaultViewExtent xmin="-295557.41304271435365081" ymin="-1370544.80613466748036444" xmax="2396184.30020166747272015" ymax="1265001.88178102136589587">
+    <DefaultViewExtent xmin="-359400.69225249614100903" ymin="-1416069.28212901577353477" xmax="2332341.02099187904968858" ymax="1219477.4057866670191288">
       <spatialrefsys>
         <wkt>PROJCRS["North_America_Albers_Equal_Area_Conic",BASEGEOGCRS["NAD83",DATUM["North American Datum 1983",ELLIPSOID["GRS 1980",6378137,298.257222101,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["North_America_Albers_Equal_Area_Conic",METHOD["Albers Equal Area",ID["EPSG",9822]],PARAMETER["Latitude of false origin",40,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8821]],PARAMETER["Longitude of false origin",-96,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8822]],PARAMETER["Latitude of 1st standard parallel",20,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Latitude of 2nd standard parallel",60,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8824]],PARAMETER["Easting at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8826]],PARAMETER["Northing at false origin",0,LENGTHUNIT["metre",1],ID["EPSG",8827]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Not known."],AREA["North America - onshore and offshore: Canada - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon. United States (USA) - Alabama; Alaska (mainland); Arizona; Arkansas; California; Colorado; Connecticut; Delaware; Florida; Georgia; Idaho; Illinois; Indiana; Iowa; Kansas; Kentucky; Louisiana; Maine; Maryland; Massachusetts; Michigan; Minnesota; Mississippi; Missouri; Montana; Nebraska; Nevada; New Hampshire; New Jersey; New Mexico; New York; North Carolina; North Dakota; Ohio; Oklahoma; Oregon; Pennsylvania; Rhode Island; South Carolina; South Dakota; Tennessee; Texas; Utah; Vermont; Virginia; Washington; West Virginia; Wisconsin; Wyoming."],BBOX[23.81,-172.54,86.46,-47.74]],ID["ESRI",102008]]</wkt>
         <proj4>+proj=aea +lat_0=40 +lon_0=-96 +lat_1=20 +lat_2=60 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
