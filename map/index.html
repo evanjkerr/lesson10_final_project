@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Title of page</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #d3d3d3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <!-- Add map to top of page and make it stretch to fill browser window. -->
+    <img class="max-image-width" src="../images/foreclosure_sum_1200.png">
+
+    <!-- Create a two column layout for map information. -->
+    <a href='../images/foreclosure_sum_8000.png' class="linkbox">Full screen version</a>
+
+    <h1>US Foreclosures (East Coast)</h1>
+    <h2>Authored by: Evan Kerr</h2>
+
+    <div class="row">
+
+      <!-- First column, the left half -->
+      <div class="first-column">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LduaiX0yj6E" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <p>Here is a link to the  
+        <a href="../files/us-counties_foreclosures.geojson">GEOJson layer </a>that includes the Urban Institute's predicted number of foreclosures as well as the area of each county that was collected on the geoid. .</p>
+         
+    </div>
+
+      <!-- Second column, the right half -->
+      <div class="column">
+        <!-- Challenge map -->
+        <p>Over the last 70 years in the United States, many legacy cities have been experiencing significant decreases in population. There are many reasons as to why this is the case, and many theories as to the permanent damages this surely caused. But with these population decreases (as well as economic output decreases) those who were left inherited dire circumstances. With the ensuing destruction of many of the housing within these neighborhoods to widen roads and to build the National highway system, a destructive cycle of povery, property depreciation, joblessness, obesity, crime, and drugs became entrenched. Foreclosures, evictions, and homelessness are all symptoms of a larger historic urban disinvestment problem in the United States.  </p>
+        <img class="max-image-width" src="../hiking-the-appalachian-trail.png">
+        <p class="linkbox">Views on the Appalachian Trail.</p>
+        
+      </div>
+    </div>
+
+    <h3>This map uses as its basemap Erwin Raisz's classic handdrawn Landforms of the United States (1957).</h3>
+    <p>Georeferenced using the GDAL Georeferencer in QGIS 3.22.</p>
+
+    <p>
+      University of Kentucky New Maps Plus, Fall 2021.
+    </p>
+    <hr>
+    <ul>
+      <li>Follow me on twitter <a href="https://twitter.com/evanjkerr">@evanjkerr</a>.</li> <!-- or any other social media site -->
+      <li>Visit my Github account <a href='https://github.com/evanjkerr'>@evanjkerr</a>.</li>
+      <li>Here's my profile on <a href="https://www.linkedin.com/in/evanjkerr">Linkedin</a>.</li>
+    </ul>
+  </section>
+
+</body>
+
+</html>
