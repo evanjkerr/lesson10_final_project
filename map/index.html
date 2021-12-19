@@ -134,29 +134,35 @@
 
       <!-- First column, the left half -->
       <div class="first-column">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LduaiX0yj6E" title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-        <p>Here is a link to the  
-        <a href="../files/us-counties_foreclosures.geojson">GEOJson layer </a>that includes the Urban Institute's predicted number of foreclosures as well as the area of each county that was collected on the geoid. .</p>
-         
+         <h3><del><center>FORECLOSURES</center></del></h3>
+        <p>Over the last 70 years in the United States, most legacy cities have been experiencing significant decreases in population. There are many reasons as to why this is the case, and many theories as to the permanent damages this trend surely caused. 
+            But with these population decreases (as well as economic output decreases) those who were left inherited dire circumstances. 
+            <hr>
+            <p>During this time there was a concerted, socially accepted, governmental effort to destroy much of the housing (single family and multi-family) within these neighborhoods to widen roads, store cars, build the national highway system, to build single-use developments and seperate uses, and to have more green space. Ensuing these efforts was an entrenched and destructive cycle of poverty, property depreciation, joblessness, obesity, familial destruction, overcrowding, crime, and drugs. 
+            Foreclosures, evictions, and homelessness are all symptoms of a larger historic urban disinvestment trend (and a federally subsidized suburban, car-dependent lifestyle that remains an unquestioned and largely misunderstood part of modern American society) that has been happening in the United States since the end of the Great Depression but grew rapidly after the end of the American-Korean war.  </p>
+            </p>
+            <p>US Housing prices are now the highest they have ever been and <a href="https://www.barrons.com/articles/home-prices-2022-housing-experts-predictions-51639610789">there is no end in sight.</a></p>
+        <a href="../images/us_housing_prices.png">US Housing Prices Post-1970.</a>
     </div>
 
       <!-- Second column, the right half -->
-      <div class="column">
+    <div>
+        <div class="column">
         <!-- Challenge map -->
-        <h3><del><center>FORECLOSURES</center></del></h3>
-        <p>Over the last 70 years in the United States, most legacy cities have been experiencing significant decreases in population. There are many reasons as to why this is the case, and many theories as to the permanent damages this surely caused. 
-            But with these population decreases (as well as economic output decreases) those who were left inherited dire circumstances. With the ensuing destruction of many of the housing within these neighborhoods to widen roads and to build the National highway system, a destructive cycle of povery, property depreciation, joblessness, obesity, crime, and drugs became entrenched. 
-            Foreclosures, evictions, and homelessness are all symptoms of a larger historic urban disinvestment trend (and federal suburban marketing scheme) that has been happening in the United States since the end of the Great Depression.  </p>
-        
-        <p class="linkbox">Views on the Appalachian Trail.</p>
-        
+        <p>Modern US housing policy and the homelessness crisis are not as simple as many wish it to be. They are historically contingent, contextually derived phenomena that require rigorous study, historical competency, and some willful cultural distancing.
+            Below is a short and digestible video to understand more. This video was put together by Bloomberg's Citylab, an urbanist publication. It centers around California houselessness as it obviously has the largest homesless and housing insecure population in the US. </p> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LduaiX0yj6E" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <hr>
+        <p>Here is a link to the <a href="../files/us-counties_foreclosures.geojson">GEOJson layer </a> that includes the Urban Institute's predicted number of foreclosures as well as the area of each county that was collected on the geoid. .</p>
+             
       </div>
+      
     </div>
 
-    <h3></h3>
-    <p>Georeferenced using the GDAL Georeferencer in QGIS 3.22.</p>
-
+    <h3>Key Geospatial Analysis</h3>
+        <p>This map was created using the Vector Creation: Create Grid tool in QGIS to create a Hexgrid projection. Both the predicted sum foreclosures and the area for each county was a created field using QGIS field calculator. </p>
+        <p>The <a href="https://www.epi.org/publication/the-color-of-law-a-forgotten-history-of-how-our-government-segregated-america/">Color of Law</a>and <a href="https://www.penguinrandomhouse.com/books/247816/evicted-by-matthew-desmond/">Evicted</a>are two beginning resources on US Housing Policy and homeslessness.</p>
     <div>
       
         <div class="first-column">
