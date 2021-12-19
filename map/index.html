@@ -3,7 +3,7 @@
 
 <head>
   <meta charset=utf-8 />
-  <title>Title of page</title>
+  <title>FORECLOSURES</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
@@ -80,10 +80,16 @@
       font-weight: 300;
     }
 
-    hr {
-      border: 0px;
-      border-bottom: 1px solid #3d3d3d;
-      padding-top: 20px;
+        div.container
+    {
+    height:300px;
+    width:300px;
+    margin:10px auto;
+    padding-top:100px;
+    }
+    hr.beautiful-line{
+        border-top: 1px solid #999; 
+    width: 90%;
     }
 
     /* Use float property to make two-column layout. */
@@ -130,46 +136,42 @@
     <h1><center>U.S. Foreclosures (East Coast)</center></h1>
     <h2><center>Authored by: Evan Kerr</center></h2>
 
+    <h3><del><center>FORECLOSURES</center></del></h3>
+    <p>Over the last 70 years in the United States, most legacy cities have been experiencing significant decreases in population. There are many reasons as to why this is the case, and many theories as to the permanent damages this trend surely caused. 
+        But with these population decreases (as well as economic output decreases) those who were left inherited dire circumstances.</p>
+        <p>During this time there was a concerted, socially accepted, governmental effort to destroy much of the housing (single family and multi-family) within these neighborhoods to widen roads, store cars, build the national highway system, to build single-use developments and seperate uses, and to have more green space. Ensuing these efforts was an entrenched and destructive cycle of poverty, property depreciation, joblessness, obesity, familial destruction, overcrowding, crime, and drugs. 
+        Foreclosures, evictions, and homelessness are all symptoms of a larger historic urban disinvestment trend (and a federally subsidized suburban, car-dependent lifestyle that remains an unquestioned and largely misunderstood part of modern American society) that has been happening in the United States since the end of the Great Depression but grew rapidly after the end of the American-Korean war.  </p>
+        </p>
+        <hr>
     <div class="row">
 
       <!-- First column, the left half -->
-      <div class="first-column">
-         <h3><del><center>FORECLOSURES</center></del></h3>
-        <p>Over the last 70 years in the United States, most legacy cities have been experiencing significant decreases in population. There are many reasons as to why this is the case, and many theories as to the permanent damages this trend surely caused. 
-            But with these population decreases (as well as economic output decreases) those who were left inherited dire circumstances. 
-            <hr>
-            <p>During this time there was a concerted, socially accepted, governmental effort to destroy much of the housing (single family and multi-family) within these neighborhoods to widen roads, store cars, build the national highway system, to build single-use developments and seperate uses, and to have more green space. Ensuing these efforts was an entrenched and destructive cycle of poverty, property depreciation, joblessness, obesity, familial destruction, overcrowding, crime, and drugs. 
-            Foreclosures, evictions, and homelessness are all symptoms of a larger historic urban disinvestment trend (and a federally subsidized suburban, car-dependent lifestyle that remains an unquestioned and largely misunderstood part of modern American society) that has been happening in the United States since the end of the Great Depression but grew rapidly after the end of the American-Korean war.  </p>
-            </p>
-            <p>US Housing prices are now the highest they have ever been and <a href="https://www.barrons.com/articles/home-prices-2022-housing-experts-predictions-51639610789">there is no end in sight.</a></p>
-        <a href="../images/us_housing_prices.png">US Housing Prices Post-1970.</a>
+    <div class="first-column">
+        <p>Modern US housing policy and the homelessness crisis are not as simple as many wish it to be. They are historically contingent, contextually derived phenomena that require rigorous study, historical competency, and some willful cultural distancing.
+            Below is a short and digestible video to understand more. This video was put together by Bloomberg's Citylab, an urbanist publication. It centers around California houselessness as it obviously has the largest homesless and housing insecure population in the US. </p>
+        <p>US Housing prices are now the highest they have ever been and <a href="https://www.barrons.com/articles/home-prices-2022-housing-experts-predictions-51639610789">there is no end in sight.</a></p>
+        <p><a href="../images/us_housing_prices.png">The exponential rise US Housing Prices Post-1970.</a></p>
+        <hr>
     </div>
 
       <!-- Second column, the right half -->
     <div>
         <div class="column">
         <!-- Challenge map -->
-        <p>Modern US housing policy and the homelessness crisis are not as simple as many wish it to be. They are historically contingent, contextually derived phenomena that require rigorous study, historical competency, and some willful cultural distancing.
-            Below is a short and digestible video to understand more. This video was put together by Bloomberg's Citylab, an urbanist publication. It centers around California houselessness as it obviously has the largest homesless and housing insecure population in the US. </p> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LduaiX0yj6E" title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <hr>
-        <p>Here is a link to the <a href="../files/us-counties_foreclosures.geojson">GEOJson layer </a> that includes the Urban Institute's predicted number of foreclosures as well as the area of each county that was collected on the geoid. .</p>
-             
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/LduaiX0yj6E" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
       </div>
       
     </div>
-
-    <h3>Key Geospatial Analysis</h3>
-        <p>This map was created using the Vector Creation: Create Grid tool in QGIS to create a Hexgrid projection. Both the predicted sum foreclosures and the area for each county was a created field using QGIS field calculator. </p>
-        <p>The <a href="https://www.epi.org/publication/the-color-of-law-a-forgotten-history-of-how-our-government-segregated-america/">Color of Law</a>and <a href="https://www.penguinrandomhouse.com/books/247816/evicted-by-matthew-desmond/">Evicted</a>are two beginning resources on US Housing Policy and homeslessness.</p>
+  
     <div>
-      
-        <div class="first-column">
-
-        </div>
-    </div>
-
+        <h3>Key Geospatial Analysis</h3>
+            <p>The Vector Creation: Create Grid tool in QGIS was utilized to create a Hexgrid projection. The fields for both the predicted sum foreclosures and the area for each county was created using the QGIS field calculator. </p>
+            <p>Here is a link to the <a href="../files/us-counties_foreclosures.geojson">GEOJSON layer </a> that includes an SQL field of the Urban Institute's predicted number of foreclosures as well as a calculation of each county's area directly from the geoid.</p>
+            <p><a href="https://www.epi.org/publication/the-color-of-law-a-forgotten-history-of-how-our-government-segregated-america/">The Color of Law </a>by Richard Rothstein and <a href="https://www.penguinrandomhouse.com/books/247816/evicted-by-matthew-desmond/">Evicted </a>by Matthew Desmond are two great introductory resources on US Housing Policy history and modern homelessness.</p>    
+        <hr>
+    <div>
+    
     <p>
       University of Kentucky New Maps Plus, Fall 2021.
     </p>
