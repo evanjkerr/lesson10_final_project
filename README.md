@@ -1,5 +1,5 @@
 # lesson10_final_project
-## Louisville Metro Foreclosures
+## US Foreclosures
 
 Potential Data Sources:
 1. https://datacatalog.urban.org/dataset/homeowner-assistance-fund-county-level-targeting-data
