@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" saveUser="evanj" saveUserFull="Evan Kerr" saveDateTime="2021-12-18T12:21:39" version="3.22.0-Białowieża">
+<qgis projectname="" saveUser="evanj" saveUserFull="Evan Kerr" saveDateTime="2021-12-18T12:31:38" version="3.22.0-Białowieża">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -5357,6 +5357,9 @@ def my_form_open(dialog, layer, feature):
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
+    <Layouts>
+      <lastLayoutExportDir type="QString">C:/Users/evanj/OneDrive/nmp/map671/lesson10_final_project/images/foreclosure_sum_8000.png</lastLayoutExportDir>
+    </Layouts>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
@@ -7101,6 +7104,12 @@ def my_form_open(dialog, layer, feature):
       <customproperties>
         <Option type="Map">
           <Option type="QString" value="png" name="atlasRasterFormat"/>
+          <Option type="bool" value="true" name="imageAntialias"/>
+          <Option type="int" value="0" name="imageCropMarginBottom"/>
+          <Option type="int" value="0" name="imageCropMarginLeft"/>
+          <Option type="int" value="0" name="imageCropMarginRight"/>
+          <Option type="int" value="0" name="imageCropMarginTop"/>
+          <Option type="bool" value="false" name="imageCropToContents"/>
           <Option type="bool" value="true" name="singleFile"/>
         </Option>
       </customproperties>
